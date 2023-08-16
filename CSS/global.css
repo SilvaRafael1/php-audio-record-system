@@ -1,0 +1,278 @@
+:root {
+  /* --bg-color: #eff1ed; */
+  /* --bg-color-title: #344E41; */
+  /* --bg-color-title: #588157; */
+  --bg-color-title: #459436;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+}
+header {
+  display: flex;
+  background-color: var(--bg-color-title);
+  width: 100%;
+  height: 65px;
+  color: white;
+  flex-direction: row;
+  align-items: center;
+}
+body {
+  background-color: rgba(27, 123, 241, 0.04);
+}
+.title {
+  display: flex;
+  width: 100%;
+  max-height: 60px;
+  background-color: var(--bg-color-title);
+  justify-content: center;
+  font-size: 40px;
+}
+video {
+  display: none;
+}
+.invisivel {
+  visibility: hidden;
+}
+.container {
+  width: 100%; 
+  display: flex; 
+  justify-content: center; 
+  /* background-color: rgba(27, 123, 241, 0.04); */
+  /* background-color: rgba(27, 125, 241, 0.02); */
+}
+.main {
+  display: flex;
+  width: 100%;
+  height: 90%;
+  max-width: 1280px;
+  background-color: var(--bg-color);
+  flex-direction: column;
+  margin-top: 25px;
+  background-color: white;
+  padding: 10px;
+  border-radius: 15px;
+  --tblr-card-border-radius: 4px;
+  box-shadow: rgba(30, 41, 59, 0.04) 0 2px 4px 0;
+  border: 1px solid rgba(98, 105, 118, 0.16);
+}
+.files-container {
+  margin-top: 10px;
+  border-radius: 7px;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bg-color-title);
+  /* background-color: #588157; */
+  padding: 10px;
+}
+.container-files {
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 10px;
+  transition: transform 0.3s;
+  /* background-color: var(--bg-color); */
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.container-files:hover {
+  background-color: var(--bg-color-title);
+  /* background-color: #588157; */
+  color: white;
+  transform: scale(1.05);
+}
+.container-files audio {
+  margin-left: 15px;
+}
+audio {
+  width: 250px;
+  height: 50px;
+}
+button, #addSetorBottom {
+  padding: 10px;
+  background-color: #eff1ed;
+  border: 0.5px solid black;
+  margin: 5px;
+}
+button:hover, #addSetorBottom:hover {
+  background-color: var(--bg-color-title);
+  color: white;
+  cursor: pointer;
+}
+hr {
+  background-color: var(--bg-color-title);
+  height: 3px;
+  margin: 7px;
+  border: 0;
+}
+footer {
+  position: fixed;
+  bottom: 0px;
+  display: flex;
+  background-color: var(--bg-color-title);
+  width: 100%;
+  height: 65px;
+  color: white;
+  flex-direction: row;
+  align-items: center;
+}
+.dash { 
+  font-size: 20px;
+}
+.admin {
+  margin-right: 15px;
+}
+.adminTI {
+  margin-left: 15px;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+a:hover {
+  color: rgb(194, 194, 194);
+  text-decoration: underline;
+}
+.login {
+  display: flex;
+  width: 15%;
+  max-height: 60px;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bg-color-title);
+}
+.grid-container {
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: var(--bg-color-title);
+  /* background-color: #588157; */
+  padding: 7px;
+  border-radius: 7px;
+}
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  font-size: 30px;
+  text-align: center;
+  margin: 2px;
+}
+.grid-item input:hover {
+  background-color: white;
+}
+.equi-add {
+  margin-top: 20px;
+  text-align: center;
+}
+#equi {
+  font-size: 28px;
+  /* margin-left: 10px; */
+}
+.addSetor input {
+  padding: 10px;
+}
+
+.pn-tela {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pn-box {
+  background-color: var(--bg-color-title);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
+  padding: 20px;
+  -webkit-box-shadow: 0px 0px 80px 0px rgba(0, 0, 0, 0.32);
+  -moz-box-shadow: 0px 0px 80px 0px rgba(0, 0, 0, 0.32);
+  box-shadow: 0px 0px 80px 0px rgba(0, 0, 0, 0.32);
+  font-size: 20px;
+  color: white;
+}
+.pn-box input {
+  padding: 10px;
+  margin-top: 15px;
+}
+.pn-box form {
+  background-color: var(--bg-color-title);
+}
+.pnc-tela {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pnc-box {
+  background-color: var(--bg-color-title);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
+  padding: 20px;
+  -webkit-box-shadow: 0px 0px 80px 0px rgba(0, 0, 0, 0.32);
+  -moz-box-shadow: 0px 0px 80px 0px rgba(0, 0, 0, 0.32);
+  box-shadow: 0px 0px 80px 0px rgba(0, 0, 0, 0.32);
+  font-size: 20px;
+  color: white;
+}
+.pnc-box input {
+  padding: 10px;
+  margin-top: 15px;
+}
+.pnc-box form {
+  background-color: var(--bg-color-title);
+}
+.container-files-delete {
+  padding: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  height: 100%;
+}
+.container-fd {
+  display: flex;
+}
+.container-fd a {
+  width: 100%;
+}
+.container-files-esquerda {
+  width: 40%;
+  display: flex;
+  align-items: center;
+}
+.login input {
+  padding: 5px;
+  cursor: pointer;
+}
+
+/* Create User From */
+.divCreateUser {
+  padding: 10px;
+  width: 300px;
+}
+.createUser div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.createUser input, .createUser select {
+  padding: 5px;
+}
+.createUser select {
+  width: 233px;
+}
+.createUser input[type="submit"] {
+  width: 100%;
+  margin-top: 10px;
+  padding: 5px;
+}
+.createUserTitle {
+  display: flex;
+  justify-content: center;
+}
+.createUser input[type="submit"]:hover {
+  background-color: #459436;
+  color: white;
+}
