@@ -17,6 +17,7 @@ require("../require/db_login.php");
                 // usuario
                 $setor = $_POST['setor'];
                 mkdir("../$dir");
+                mkdir("../$dir/info/");
                 mkdir("../$dir/uploads/");
                 mkdir("../$dir/pre-upload/");
                 mkdir("../$dir/audios-after-1-day/");
@@ -25,9 +26,10 @@ require("../require/db_login.php");
                 copy("../base/delete.php", "../$dir/delete.php");
                 copy("../base/delete_30d.php", "../$dir/delete_30d.php");
                 copy("../base/move-audio.php", "../$dir/move-audio.php");
-                copy("../base/pre-upload-auth.php", "../$dir/pre-upload-auth.php");
-                copy("../base/pre-upload.php", "../$dir/pre-upload.php");
                 copy("../base/logout.php", "../$dir/logout.php");
+                copy("../base/pre-upload.php", "../$dir/pre-upload.php");
+                copy("../base/record.php", "../$dir/record.php");
+                copy("../base/post-record.php", "../$dir/post-record.php");
                 fopen("../$dir/$setor.txt", 'w');
                 
                 // admin

@@ -1,9 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php
+require("../require/db_login.php");
+?>
+
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Informações do Paciente</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
     <link rel="stylesheet" href="../css/infoPaciente.css">
@@ -12,7 +14,7 @@
 <body>
     <div class="login">
         <h1>Informações do Paciente</h1>
-        <form action="pre-upload-auth.php" method="post">
+        <form action="record.php" method="post">
             <label for="paciente">
                 <i class="fas fa-user"></i>
             </label>

@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "segoe ui", roboto, oxygen,
+    ubuntu, cantarell, "fira sans", "droid sans", "helvetica neue", Arial,
+    sans-serif;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.container-record {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(27, 123, 241, 0.04);
+}
+.box-record {
+  background-color: white;
+  padding: 20px;
+  --tblr-card-border-radius: 4px;
+  box-shadow: rgba(30, 41, 59, 0.04) 0 2px 4px 0;
+  border: 1px solid rgba(98, 105, 118, 0.16);
+}
+.box-record h1 {
+  text-align: center;
+  color: #459436;
+  font-size: 24px;
+  padding: 20px 0 20px 0;
+  border-bottom: 1px solid #dee0e4;
+}
+.button-record, .header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.info {
+    margin-top: 20px;
+}
