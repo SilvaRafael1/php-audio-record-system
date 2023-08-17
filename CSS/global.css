@@ -246,6 +246,14 @@ a:hover {
   padding: 5px;
   cursor: pointer;
 }
+.gravarAudio input {
+  padding: 7px;
+}
+.gravarAudio input[type="submit"]:hover {
+  background-color: #459436;
+  color: white;
+  cursor: pointer;
+}
 
 /* Create User From */
 .divCreateUser {

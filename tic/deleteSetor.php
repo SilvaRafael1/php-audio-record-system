@@ -18,6 +18,7 @@ require("../require/db_login.php");
                 array_map('unlink', glob("../$dir/*.*"));
                 rmdir("../$dir/uploads");
                 rmdir("../$dir/pre-upload");
+                rmdir("../$dir/info");
                 rmdir("../$dir/audios-after-1-day");
                 rmdir("../$dir");
                 

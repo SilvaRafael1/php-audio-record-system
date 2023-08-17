@@ -1,14 +1,17 @@
 <?php
-
-$paciente = $_POST['paciente'];
-$dataNasc_input = $_POST['dataNasc'];
-$dataNasc_change = explode("-", $dataNasc_input);
-$dataNasc_reverse = array_reverse($dataNasc_change);
-$dataNasc = implode("-", $dataNasc_reverse);
+require("../require/db_login.php");
 
 $dir = "./pre-upload";
 $files = scandir($dir);
+$info = scandir("./info");
 $audio = $files[2];
+$dataNascTxt = $info[2];
+$dataNasc = str_replace(".txt", "", $dataNascTxt);
+$pacienteTxt = $info[3];
+$paciente = str_replace(".txt", "", $pacienteTxt);
+
+unlink("./info/$dataNascTxt");
+unlink("./info/$pacienteTxt");
 
 // $boldAbre = "BOLDABRE123strongBOLDFECHA123";
 // $boldFecha = "BOLDABRE123BARRAstrongBOLDFECHA123";
@@ -21,6 +24,4 @@ rename($rename_from, $rename_to);
 copy($rename_to, $copy_to);
 unlink($rename_to);
 
-header("Location: index.php")
-
-?>
+header("Location: index.php");
