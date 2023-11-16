@@ -7,6 +7,7 @@ require("../require/db_login.php");
     <link rel="icon" type="image/x-icon" href="./img/icon_logo.png">
     <link rel="stylesheet" href="../CSS/global.css">
     <title>Admin Page</title>
+    <link rel="shortcut icon" href="../img/phone.png" type="image/x-icon">
 </head>
 
 <body>

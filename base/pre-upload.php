@@ -9,6 +9,7 @@ require("../require/db_login.php");
     <title>Informações do Paciente</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
     <link rel="stylesheet" href="../css/infoPaciente.css">
+    <link rel="shortcut icon" href="../img/phone.png" type="image/x-icon">
 </head>
 
 <body>

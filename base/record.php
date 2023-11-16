@@ -22,6 +22,7 @@ fopen("./info/$dataNasc.txt", "w");
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
     <link rel="stylesheet" href="../CSS/global.css">
     <link rel="stylesheet" href="../CSS/record.css">
+    <link rel="shortcut icon" href="../img/phone.png" type="image/x-icon">
     <script src="../JS/DetectRTC.js"></script>
     <script src="../JS/RecordRTC.js"> </script>
 </head>

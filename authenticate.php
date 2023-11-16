@@ -1,4 +1,5 @@
 <head>
+    <link rel="shortcut icon" href="./img/phone.png" type="image/x-icon">
     <link rel="stylesheet" href="./CSS/index.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
     <title>Passagem de Plantão - Login</title>

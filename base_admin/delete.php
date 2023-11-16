@@ -8,7 +8,7 @@
 
 <head>
     <link rel="stylesheet" href="../../../CSS/global.css">
-    <link rel="icon" type="image/x-icon" href="../../img/icon_logo.png">
+    <link rel="shortcut icon" href="../../../img/phone.png" type="image/x-icon">
     <?php
     $p = basename(getcwd()) . "\n";
     $replace = str_replace("_", " ", $p);

@@ -8,6 +8,7 @@ require("./delete_30d.php");
     <title>Passagem de Plantão</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="../CSS/global.css">
+    <link rel="shortcut icon" href="../img/phone.png" type="image/x-icon">
 </head>
 
 <header>

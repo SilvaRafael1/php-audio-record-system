@@ -3,6 +3,7 @@ require("../require/db_login.php");
 ?>
 
 <head>
+    <link rel="shortcut icon" href="../img/phone.png" type="image/x-icon">
     <link rel="stylesheet" href="./css/global.css">
     <title>Admin Page - Adicionar Setor</title>
     <link rel="icon" type="image/x-icon" href="./img/icon_logo.png">

@@ -3,6 +3,7 @@ require("../require/db_login.php");
 ?>
 
 <head>
+    <link rel="shortcut icon" href="../img/phone.png" type="image/x-icon">
     <link rel="stylesheet" href="./css/global.css">
     <title>Admin Page - Deletar Setor</title>
     <link rel="icon" type="image/x-icon" href="./img/icon_logo.png">
@@ -13,7 +14,8 @@ require("../require/db_login.php");
         <?php
         $setor_abv = strtolower($_POST['abv_setor']);
         if ($setor_abv != " " && $setor_abv != "") {
-            function deletarSetor($dir) {
+            function deletarSetor($dir)
+            {
                 array_map('unlink', glob("../$dir/uploads/*.*"));
                 array_map('unlink', glob("../$dir/*.*"));
                 rmdir("../$dir/uploads");
@@ -21,7 +23,7 @@ require("../require/db_login.php");
                 rmdir("../$dir/info");
                 rmdir("../$dir/audios-after-1-day");
                 rmdir("../$dir");
-                
+
                 array_map('unlink', glob("../adm/setores/$dir/uploads/*.*"));
                 array_map('unlink', glob("../adm/setores/$dir/*.*"));
                 rmdir("../adm/setores/$dir/uploads");

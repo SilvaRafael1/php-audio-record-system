@@ -4,7 +4,7 @@ require("../require/db_login.php");
 
 <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/x-icon" href="./img/icon_logo.png">
+    <link rel="shortcut icon" href="../img/phone.png" type="image/x-icon">
     <link rel="stylesheet" href="../CSS/global.css">
     <title>Admin Page - TI</title>
 </head>
