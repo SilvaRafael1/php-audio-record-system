@@ -1,6 +1,9 @@
 <?php
 require("../require/db_login.php");
 
+$fullPath = __DIR__ . '/info' ;
+array_map('unlink', glob( "$fullPath/*.txt"));
+
 $paciente = $_POST['paciente'];
 $dataNasc_input = $_POST['dataNasc'];
 $dataNasc_change = explode("-", $dataNasc_input);
@@ -15,7 +18,7 @@ fopen("./info/$dataNasc.txt", "w");
 
 <head>
     <meta charset="UTF-8">
-    <title>Informações do Paciente</title>
+    <title>Informa&ccedil;&otilde;es do Paciente</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
     <link rel="stylesheet" href="../CSS/global.css">
     <link rel="stylesheet" href="../CSS/record.css">
@@ -26,7 +29,7 @@ fopen("./info/$dataNasc.txt", "w");
 <body>
     <div class="container-record">
         <div class="box-record">
-            <h1>Informações do Paciente</h1>
+            <h1>Informa&ccedil;&otilde;es do Paciente</h1>
             <div class="info">
                 <?php
                 echo "Paciente: $paciente <br>";
@@ -47,7 +50,7 @@ fopen("./info/$dataNasc.txt", "w");
                             </select>
                         </div>
 
-                        <button>Começar a Gravar</button>
+                        <button>Come&ccedil;ar a Gravar</button>
                     </h2>
 
                     <div style="display: none;">
